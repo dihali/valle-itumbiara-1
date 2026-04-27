@@ -31,16 +31,14 @@ export default function Home() {
           animate="visible"
         >
           <motion.p variants={fadeUp} className="text-[#48CAE4] font-bold tracking-widest text-sm uppercase mb-4">
-            PARA QUEM O SEGURO TRADICIONAL DISSE NÃO
+            PROTEÇÃO VEICULAR EM ITUMBIARA
           </motion.p>
           <motion.h1 variants={fadeUp} className="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-white">
-            Seu veículo protegido<br />
-            a partir de hoje.<br />
-            <span className="text-[#48CAE4]">Do jeito que deveria ser desde o começo.</span>
+            Seu veículo protegido.<br />
+            <span className="text-[#48CAE4]">Sem burocracia. Sem análise de perfil.</span>
           </motion.h1>
           <motion.p variants={fadeUp} className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-3">
-            Carro ou moto — não importa se você é Uber, motoboy, tem 20 anos ou carro de 2008.
-            Em Itumbiara, a Valle aceita todo mundo que o seguro rejeita.
+            Carro ou moto — não importa se você é Uber, motoboy, jovem condutor ou tem veículo mais antigo. A Valle protege quem trabalha, quem cuida da família, quem precisa dirigir tranquilo todo dia.
           </motion.p>
           <motion.p variants={fadeUp} className="text-[#48CAE4] font-semibold mb-10">
             Protegido no mesmo dia. A partir de R$&nbsp;83/mês.
