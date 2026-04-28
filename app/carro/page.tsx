@@ -22,22 +22,20 @@ export default function CarroPage() {
             </Link>
           </motion.div>
           <motion.p variants={fadeUp} className="text-[#48CAE4] font-bold tracking-widest text-sm uppercase mb-4">
-            PARA MOTORISTAS QUE O SEGURO TRADICIONAL NÃO QUER
+            PROTEÇÃO VEICULAR EM ITUMBIARA — SEM BUROCRACIA
           </motion.p>
           <motion.h1 variants={fadeUp} className="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-white">
-            Você não foi rejeitado<br />
-            por ser mal motorista.<br />
-            <span className="text-[#48CAE4]">Foi rejeitado por trabalhar de verdade.</span>
+            Você trabalha duro.<br />
+            <span className="text-[#48CAE4]">Seu veículo merece proteção de verdade.</span>
           </motion.h1>
           <motion.p variants={fadeUp} className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-3">
-            Uber, motoboy, 20 anos, Gol 2008 — você não escolheu esses perfis. Mas escolheu trabalhar.
-            A Valle te aceita: a partir de R$&nbsp;100/mês, protegido no mesmo dia.
+            Uber, motoboy, jovem condutor ou veículo com história — na Valle, sua dedicação conta mais do que qualquer análise de perfil. A partir de R$&nbsp;100/mês, sem carência, atendimento humano direto no WhatsApp.
           </motion.p>
           <motion.p variants={fadeUp} className="text-[#48CAE4] font-semibold mb-10">
-            A Valle protege exatamente quem o seguro rejeita.
+            Cotação imediata e sem custo.
           </motion.p>
           <motion.div variants={fadeUp}>
-            <CTAWhatsApp label="📱 QUERO SER ACEITO NA VALLE AGORA" variant="green" />
+            <CTAWhatsApp label="📱 QUERO PROTEGER MEU VEÍCULO AGORA" variant="green" />
           </motion.div>
         </motion.div>
         <div className="absolute bottom-0 left-0 right-0">
