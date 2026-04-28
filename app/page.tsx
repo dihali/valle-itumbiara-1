@@ -147,8 +147,8 @@ export default function Home() {
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { titulo: "SEM CARÊNCIA", icon: "⚡", desc: "Assinou agora, tá protegido agora. Não tem aquela história de &apos;espera 30 dias&apos;. Aqui é proteção a partir do dia 1." },
-              { titulo: "SEM ANÁLISE DE PERFIL", icon: "✅", desc: "Motoboy? Aceito. Uber? Aceito. Tem 21 anos? Aceito. Mora em zona &apos;perigosa&apos;? Aceito. A Valle protege quem o seguro rejeita." },
+              { titulo: "SEM CARÊNCIA", icon: "⚡", desc: "Assinou agora, tá protegido agora. Não tem aquela história de espera de 30 dias. A proteção começa na confirmação do seu pagamento." },
+              { titulo: "SEM ANÁLISE DE PERFIL", icon: "✅", desc: "Motoboy? Aceito. Uber? Aceito. Tem 21 anos? Aceito. Mora em zona de risco? Aceito. A Valle protege quem o seguro rejeita." },
               { titulo: "ATENDIMENTO HUMANO", icon: "💬", desc: "Você fala com o gestor Humberto Correia direto, no WhatsApp. Não é call center, não é robô. É gente de Itumbiara cuidando da sua proteção 24 horas." },
             ].map((card, i) => (
               <AnimatedSection key={card.titulo} delay={i * 0.15}>
@@ -254,7 +254,7 @@ export default function Home() {
             {[
               { q: "A Valle é seguradora?", a: "Não. A Valle é uma associação de proteção veicular, modelo cooperativo onde os associados se ajudam. Somos regularizados pela SUSEP — o mesmo órgão que fiscaliza as seguradoras — por isso conseguimos oferecer proteção séria com preços muito mais acessíveis." },
               { q: "Qual a idade máxima do veículo?", a: "Aceitamos veículos com até 20 anos de fabricação." },
-              { q: "Tem carência?", a: "Não. A partir do momento que você paga a filiação e a vistoria é aprovada, seu veículo já está protegido. Proteção no dia 1." },
+              { q: "Tem carência?", a: "Não temos carência. A proteção começa no mesmo dia da aprovação do seu cadastro e confirmação do pagamento — sem aquela espera de 30 ou 60 dias que outras empresas cobram." },
               { q: "Quanto custa a mensalidade?", a: "A partir de R$ 83/mês para motos e a partir de R$ 100/mês para carros. Manda mensagem pra saber o valor exato do seu veículo — cotação imediata e sem custo." },
               { q: "Tem taxa de adesão?", a: "Sim, a filiação é cobrada uma única vez e equivale a aproximadamente 1% do valor de tabela do veículo." },
               { q: "Aceita motoboy, Uber, 99?", a: "Sim, aceitamos todos. A Valle não faz análise de perfil." },
