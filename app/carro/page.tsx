@@ -31,7 +31,7 @@ export default function CarroPage() {
           </motion.h1>
           <motion.p variants={fadeUp} className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-3">
             Uber, motoboy, 20 anos, Gol 2008 — você não escolheu esses perfis. Mas escolheu trabalhar.
-            A Valle te aceita: a partir de R$&nbsp;200/mês, protegido no mesmo dia.
+            A Valle te aceita: a partir de R$&nbsp;100/mês, protegido no mesmo dia.
           </motion.p>
           <motion.p variants={fadeUp} className="text-[#48CAE4] font-semibold mb-10">
             A Valle protege exatamente quem o seguro rejeita.
