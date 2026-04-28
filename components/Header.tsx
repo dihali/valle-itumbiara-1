@@ -16,7 +16,7 @@ export default function Header() {
   }, []);
 
   const message = encodeURIComponent("Olá Humberto, quero fazer uma cotação na Valle");
-  const waHref = `https://wa.me/5564931990013?text=${message}`;
+  const waHref = `https://wa.me/556499399013?text=${message}`;
 
   return (
     <motion.header

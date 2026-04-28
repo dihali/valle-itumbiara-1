@@ -4,7 +4,7 @@ export default function WhatsAppButton() {
   const message = encodeURIComponent(
     "Olá Humberto, quero fazer uma cotação na Valle"
   );
-  const href = `https://wa.me/5564931990013?text=${message}`;
+  const href = `https://wa.me/556499399013?text=${message}`;
 
   return (
     <a

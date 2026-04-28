@@ -209,9 +209,9 @@ export default function CarroPage() {
             <span className="text-[#48CAE4]">Isso acaba hoje.</span>
           </h2>
           <p className="text-blue-200 text-lg mb-10">
-            Manda mensagem pro Humberto agora. Em 2 minutos você sabe o valor exato — e já pode sair protegido.
+            Fale com o gestor Humberto Correia agora. Em 2 minutos você sabe o valor exato — e já pode sair protegido.
           </p>
-          <CTAWhatsApp label="📱 FALAR COM O HUMBERTO — COTAR AGORA" variant="green" />
+          <CTAWhatsApp label="📱 FALAR COM O GESTOR HUMBERTO CORREIA" variant="green" />
         </AnimatedSection>
       </section>
 
@@ -231,8 +231,9 @@ export default function CarroPage() {
           </div>
           <div>
             <h4 className="text-white font-bold mb-3">Contato</h4>
-            <p>WhatsApp: <a href="https://wa.me/5564931990013" className="text-[#00B4D8] hover:underline">(64) 9319-9013</a></p>
-            <p>Atendimento: das 6h às 23h, todos os dias</p>
+            <p>WhatsApp: <a href="https://wa.me/556499399013" className="text-[#00B4D8] hover:underline">(64) 9939-9013</a></p>
+            <p>Gestor: Humberto Correia</p>
+            <p>Atendimento: 24 horas, todos os dias</p>
           </div>
         </div>
         <div className="max-w-4xl mx-auto mt-8 pt-8 border-t border-white/10 text-center text-xs">

@@ -14,7 +14,7 @@ export default function CTAWhatsApp({
   const message = encodeURIComponent(
     "Olá Humberto, quero fazer uma cotação na Valle"
   );
-  const href = `https://wa.me/5564931990013?text=${message}`;
+  const href = `https://wa.me/556499399013?text=${message}`;
 
   const base =
     "inline-block font-bold text-lg px-8 py-4 rounded-full shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-xl text-center btn-shine";

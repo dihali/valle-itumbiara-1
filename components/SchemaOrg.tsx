@@ -7,7 +7,7 @@ export default function SchemaOrg() {
     description:
       "Proteção veicular em Itumbiara e região. Carro ou moto, sem carência, sem análise de perfil.",
     url: "https://valleprotecaoitumbiara.com.br",
-    telephone: "+55-64-9319-9013",
+    telephone: "+55-64-9939-9013",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Av. Calisto Jorge — Bairro Alto da Boa Vista",

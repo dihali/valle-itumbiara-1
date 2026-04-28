@@ -18,9 +18,8 @@ export default function Home() {
   return (
     <main className="bg-white text-[#0A0E1A]">
 
-      {/* HERO — fundo azul gradiente */}
+      {/* HERO */}
       <section className="hero-gradient min-h-screen flex flex-col items-center justify-center text-center px-6 py-28 relative overflow-hidden">
-        {/* Círculos decorativos de fundo */}
         <div className="absolute top-[-100px] right-[-100px] w-[500px] h-[500px] rounded-full bg-white/5 pointer-events-none" />
         <div className="absolute bottom-[-80px] left-[-80px] w-[400px] h-[400px] rounded-full bg-[#00B4D8]/10 pointer-events-none" />
 
@@ -41,7 +40,7 @@ export default function Home() {
             Carro ou moto — não importa se você é Uber, motoboy, jovem condutor ou tem veículo mais antigo. A Valle protege quem trabalha, quem cuida da família, quem precisa dirigir tranquilo todo dia.
           </motion.p>
           <motion.p variants={fadeUp} className="text-[#48CAE4] font-semibold mb-10">
-            Protegido no mesmo dia. A partir de R$&nbsp;83/mês.
+            A partir de R$&nbsp;83/mês. Faça sua cotação na hora — imediata e sem custo.
           </motion.p>
           <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <CTAWhatsApp label="📱 QUERO MINHA PROTEÇÃO AGORA" variant="green" />
@@ -50,14 +49,12 @@ export default function Home() {
             </a>
           </motion.div>
           <motion.div variants={fadeUp} className="flex flex-wrap justify-center gap-6 mt-10 text-sm text-blue-200">
-            <span>✅ Protegido no dia 1 — sem carência</span>
-            <span>✅ Atendimento das 6h às 23h</span>
-            <span>✅ Cobertura em todo Brasil*</span>
+            <span>✅ Sem carência</span>
+            <span>✅ Atendimento 24 horas</span>
+            <span>✅ Cobertura em território nacional</span>
           </motion.div>
-          <motion.p variants={fadeUp} className="text-xs text-blue-300/60 mt-2">*exceto SP, RJ e BH</motion.p>
         </motion.div>
 
-        {/* Wave divider */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 80L60 69.3C120 59 240 37 360 32C480 27 600 37 720 42.7C840 48 960 48 1080 42.7C1200 37 1320 27 1380 21.3L1440 16V80H1380C1320 80 1200 80 1080 80C960 80 840 80 720 80C600 80 480 80 360 80C240 80 120 80 60 80H0Z" fill="white"/>
@@ -82,43 +79,6 @@ export default function Home() {
         </AnimatedSection>
       </section>
 
-      {/* VALUE STACK */}
-      <section className="py-20 px-6 bg-[#F0F5FF]">
-        <AnimatedSection className="max-w-3xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-3 text-[#0A0E1A]">
-              O que você leva por <span className="text-[#1A3A8F]">a partir de R$&nbsp;200/mês.</span>
-            </h2>
-            <p className="text-gray-500">Veja o que a Valle entrega — e o que vale cada parte.</p>
-          </div>
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
-            {[
-              { item: "Cobertura colisão, roubo, incêndio e fenômenos da natureza", valor: "Inestimável" },
-              { item: "Guincho 24h em qualquer lugar do Brasil", valor: "R$ 200+ por acionamento" },
-              { item: "Rastreador veicular incluso", valor: "R$ 60/mês" },
-              { item: "Assistência completa (bateria, pneu, chave, pane)", valor: "R$ 40/mês" },
-              { item: "Desconto em postos parceiros", valor: "R$ 30+/mês" },
-              { item: "Atendimento humano das 6h às 23h", valor: "Sem preço" },
-            ].map((row, i) => (
-              <div
-                key={row.item}
-                className={`flex justify-between items-center px-6 py-4 gap-4 ${
-                  i % 2 === 0 ? "bg-white" : "bg-[#F8FAFF]"
-                } hover:bg-[#EEF3FF] transition-colors`}
-              >
-                <span className="text-gray-700 text-sm">{row.item}</span>
-                <span className="text-[#1A3A8F] font-bold text-sm whitespace-nowrap">{row.valor}</span>
-              </div>
-            ))}
-            <div className="bg-[#1A3A8F] px-6 py-5 flex justify-between items-center">
-              <span className="font-extrabold text-white text-lg">Você paga apenas</span>
-              <span className="font-extrabold text-[#48CAE4] text-2xl">A partir de R$&nbsp;200/mês</span>
-            </div>
-          </div>
-          <p className="text-center text-gray-400 text-xs mt-3">*Valores de referência para carro popular. Consulte o valor exato no WhatsApp.</p>
-        </AnimatedSection>
-      </section>
-
       {/* COBERTURAS */}
       <section id="coberturas" className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
@@ -138,12 +98,12 @@ export default function Home() {
             {[
               { icon: "🛡️", title: "Colisão", desc: "Bateu? A Valle cobre. Você não fica na mão." },
               { icon: "🚨", title: "Roubo & Furto", desc: "Levaram seu veículo? Reembolso pelo valor da tabela." },
+              { icon: "👥", title: "Cobertura para terceiros", desc: "Causou dano a outro veículo? A Valle cobre também." },
               { icon: "🚛", title: "Guincho 24h", desc: "Pifou na BR? A gente reboca onde você estiver." },
               { icon: "🔥", title: "Incêndio", desc: "Pegou fogo? Coberto." },
               { icon: "⛈️", title: "Fenômenos da natureza", desc: "Granizo, enchente, queda de árvore — protegido." },
-              { icon: "📡", title: "Rastreador incluso", desc: "Monitorado 24h, sem custo extra." },
-              { icon: "⛽", title: "Desconto combustível", desc: "Economize no tanque sendo associado." },
               { icon: "🆘", title: "Assistência 24h", desc: "Bateria, chave, pneu? A gente vai até você." },
+              { icon: "🔑", title: "Chaveiro 24h", desc: "Fechou a chave no carro? Resolve na hora." },
             ].map((item) => (
               <motion.div
                 key={item.title}
@@ -159,8 +119,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SUSEP */}
+      <section className="py-16 px-6 bg-[#F0F5FF]">
+        <AnimatedSection className="max-w-3xl mx-auto">
+          <div className="bg-white rounded-2xl border border-[#1A3A8F]/20 shadow-sm p-8 flex flex-col md:flex-row items-center gap-6">
+            <div className="flex-shrink-0 w-20 h-20 rounded-2xl bg-[#1A3A8F] flex flex-col items-center justify-center text-white text-center">
+              <span className="text-xs font-bold leading-tight">REGULARIZADA</span>
+              <span className="text-lg font-extrabold mt-1">SUSEP</span>
+            </div>
+            <div>
+              <h3 className="font-extrabold text-lg text-[#1A3A8F] mb-2">Regularizada pela SUSEP</h3>
+              <p className="text-gray-600 leading-relaxed">
+                A Valle é regularizada pela <strong>SUSEP</strong> — Superintendência de Seguros Privados, o órgão federal que fiscaliza e regulamenta o mercado de seguros no Brasil. Isso significa que operamos dentro das normas, com transparência e segurança para você — igual a uma seguradora, com preço de associação.
+              </p>
+            </div>
+          </div>
+        </AnimatedSection>
+      </section>
+
       {/* POR QUE A VALLE */}
-      <section className="py-20 px-6 bg-[#F0F5FF]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-extrabold text-[#0A0E1A]">
@@ -169,9 +147,9 @@ export default function Home() {
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { titulo: "SEM CARÊNCIA", icon: "⚡", desc: "Assinou agora, tá protegido agora. Não tem aquela história de 'espera 30 dias'. Aqui é proteção a partir do dia 1." },
-              { titulo: "SEM ANÁLISE DE PERFIL", icon: "✅", desc: "Motoboy? Aceito. Uber? Aceito. Tem 21 anos? Aceito. Mora em zona 'perigosa'? Aceito. A Valle protege quem o seguro rejeita." },
-              { titulo: "ATENDIMENTO HUMANO", icon: "💬", desc: "Você fala com o Humberto direto, no WhatsApp. Não é call center, não é robô. É gente de Itumbiara cuidando da sua proteção." },
+              { titulo: "SEM CARÊNCIA", icon: "⚡", desc: "Assinou agora, tá protegido agora. Não tem aquela história de &apos;espera 30 dias&apos;. Aqui é proteção a partir do dia 1." },
+              { titulo: "SEM ANÁLISE DE PERFIL", icon: "✅", desc: "Motoboy? Aceito. Uber? Aceito. Tem 21 anos? Aceito. Mora em zona &apos;perigosa&apos;? Aceito. A Valle protege quem o seguro rejeita." },
+              { titulo: "ATENDIMENTO HUMANO", icon: "💬", desc: "Você fala com o gestor Humberto Correia direto, no WhatsApp. Não é call center, não é robô. É gente de Itumbiara cuidando da sua proteção 24 horas." },
             ].map((card, i) => (
               <AnimatedSection key={card.titulo} delay={i * 0.15}>
                 <div className="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-gray-100 h-full">
@@ -186,7 +164,7 @@ export default function Home() {
       </section>
 
       {/* COMO FUNCIONA */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-[#F0F5FF]">
         <div className="max-w-3xl mx-auto text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-extrabold mb-12 text-[#0A0E1A]">
@@ -195,7 +173,7 @@ export default function Home() {
           </AnimatedSection>
           <div className="flex flex-col gap-4 text-left">
             {[
-              { num: "01", titulo: "Faça a cotação", desc: "Manda mensagem no WhatsApp. Em minutos você recebe o valor da sua mensalidade.", icon: "📱" },
+              { num: "01", titulo: "Faça a cotação", desc: "Manda mensagem no WhatsApp. Em minutos você recebe o valor da sua mensalidade — cotação imediata e sem custo.", icon: "📱" },
               { num: "02", titulo: "Envie seus dados", desc: "Documento do veículo, foto da CNH e dados básicos.", icon: "📄" },
               { num: "03", titulo: "Vistoria online", desc: "Você mesmo grava um vídeo curto pelo celular. Sem deslocamento, sem perda de tempo.", icon: "🎥" },
               { num: "04", titulo: "Tá protegido!", desc: "Pagou a filiação, já vale. Sem carência, sem espera, sem burocracia.", icon: "🛡️" },
@@ -220,7 +198,7 @@ export default function Home() {
       </section>
 
       {/* QUAL VEÍCULO */}
-      <section className="py-20 px-6 bg-[#F0F5FF]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-extrabold mb-12 text-[#0A0E1A]">
@@ -229,7 +207,7 @@ export default function Home() {
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              { href: "/carro", emoji: "🚗", titulo: "Carro de passeio", desc: "Popular, intermediário ou novo — protegemos todos.", preco: "A partir de R$ 200/mês" },
+              { href: "/carro", emoji: "🚗", titulo: "Carro de passeio", desc: "Popular, intermediário ou novo — protegemos todos.", preco: "A partir de R$ 100/mês" },
               { href: "/moto", emoji: "🏍️", titulo: "Moto", desc: "Uso pessoal, motoboy, delivery, app — todos aceitos.", preco: "A partir de R$ 83/mês" },
             ].map((v, i) => (
               <AnimatedSection key={v.href} delay={i * 0.15}>
@@ -250,7 +228,7 @@ export default function Home() {
       </section>
 
       {/* ÁREA DE ATUAÇÃO */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-[#F0F5FF]">
         <AnimatedSection className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-[#0A0E1A]">
             Atendemos <span className="text-[#1A3A8F]">Itumbiara e toda a região.</span>
@@ -259,14 +237,13 @@ export default function Home() {
             Você é de Itumbiara, Buriti Alegre, Goiatuba, Panamá, Cachoeira Dourada, Araporã, Centralina ou qualquer cidade da região? A Valle te atende.
           </p>
           <p className="text-gray-600 text-lg leading-relaxed">
-            E se acontecer algo quando você estiver viajando, a cobertura é nacional* — você dirige em todo o Brasil com tranquilidade.
+            E se acontecer algo quando você estiver viajando, a cobertura é em território nacional — você dirige com tranquilidade em qualquer lugar do Brasil.
           </p>
-          <p className="text-sm text-gray-400 mt-3">*com exceção das capitais SP, RJ e BH</p>
         </AnimatedSection>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-6 bg-[#F0F5FF]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-extrabold text-[#0A0E1A]">
@@ -275,14 +252,14 @@ export default function Home() {
           </AnimatedSection>
           <div className="flex flex-col gap-4">
             {[
-              { q: "A Valle é seguradora?", a: "Não. A Valle é uma associação de proteção veicular, modelo cooperativo onde os associados se ajudam. Por isso conseguimos preços muito mais acessíveis que seguro tradicional." },
+              { q: "A Valle é seguradora?", a: "Não. A Valle é uma associação de proteção veicular, modelo cooperativo onde os associados se ajudam. Somos regularizados pela SUSEP — o mesmo órgão que fiscaliza as seguradoras — por isso conseguimos oferecer proteção séria com preços muito mais acessíveis." },
               { q: "Qual a idade máxima do veículo?", a: "Aceitamos veículos com até 20 anos de fabricação." },
               { q: "Tem carência?", a: "Não. A partir do momento que você paga a filiação e a vistoria é aprovada, seu veículo já está protegido. Proteção no dia 1." },
-              { q: "Quanto custa a mensalidade?", a: "A partir de R$ 83/mês para motos e a partir de R$ 200/mês para carros populares. Manda mensagem no WhatsApp pra saber o valor exato do seu veículo." },
+              { q: "Quanto custa a mensalidade?", a: "A partir de R$ 83/mês para motos e a partir de R$ 100/mês para carros. Manda mensagem pra saber o valor exato do seu veículo — cotação imediata e sem custo." },
               { q: "Tem taxa de adesão?", a: "Sim, a filiação é cobrada uma única vez e equivale a aproximadamente 1% do valor de tabela do veículo." },
               { q: "Aceita motoboy, Uber, 99?", a: "Sim, aceitamos todos. A Valle não faz análise de perfil." },
-              { q: "Como faço pra acionar em caso de sinistro?", a: "Pelo nosso atendimento direto no WhatsApp ou pelo app oficial Valle Proteção Veicular." },
-              { q: "Atende minha cidade?", a: "Atendemos Itumbiara e toda a região do Sul de Goiás e Triângulo Mineiro próximo. Cobertura nacional ao dirigir, com exceção das capitais SP, RJ e BH." },
+              { q: "Como faço pra acionar em caso de sinistro?", a: "Pelo atendimento direto no WhatsApp com o gestor Humberto Correia ou pelo app oficial Valle Proteção Veicular." },
+              { q: "Atende minha cidade?", a: "Atendemos Itumbiara e toda a região do Sul de Goiás e Triângulo Mineiro. Cobertura em território nacional ao dirigir." },
             ].map((faq, i) => (
               <AnimatedSection key={faq.q} delay={i * 0.05}>
                 <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-[#1A3A8F]/20 border border-gray-100 transition-all duration-300">
@@ -293,7 +270,7 @@ export default function Home() {
             ))}
           </div>
           <AnimatedSection className="mt-10 text-center">
-            <p className="text-gray-500 mb-4">Ainda tem dúvida? Fala direto com o Humberto.</p>
+            <p className="text-gray-500 mb-4">Ainda tem dúvida? Fala direto com o gestor Humberto Correia.</p>
             <CTAWhatsApp label="📱 TIRAR MINHA DÚVIDA NO WHATSAPP" variant="outline" />
           </AnimatedSection>
         </div>
@@ -303,7 +280,7 @@ export default function Home() {
       <section className="py-24 px-6 text-center hero-gradient relative overflow-hidden">
         <div className="absolute top-0 left-0 right-0">
           <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0L60 10.7C120 21 240 43 360 48C480 53 600 43 720 37.3C840 32 960 32 1080 37.3C1200 43 1320 53 1380 58.7L1440 64V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0Z" fill="#F0F5FF"/>
+            <path d="M0 0L60 10.7C120 21 240 43 360 48C480 53 600 43 720 37.3C840 32 960 32 1080 37.3C1200 43 1320 53 1380 58.7L1440 64V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0Z" fill="white"/>
           </svg>
         </div>
         <AnimatedSection className="relative z-10 max-w-2xl mx-auto">
@@ -311,10 +288,11 @@ export default function Home() {
             Você já trabalhou demais<br />pra ficar desprotegido.<br />
             <span className="text-[#48CAE4]">Isso muda hoje.</span>
           </h2>
-          <p className="text-blue-200 text-lg mb-10">
-            Manda mensagem pro Humberto agora. Em 2 minutos você sabe o valor exato — e já pode sair protegido.
+          <p className="text-blue-200 text-lg mb-3">
+            Fale com o gestor Humberto Correia agora. Em 2 minutos você sabe o valor exato — e já pode sair protegido.
           </p>
-          <CTAWhatsApp label="📱 FALAR COM O HUMBERTO — COTAR AGORA" variant="green" />
+          <p className="text-[#48CAE4] font-semibold mb-10">Cotação imediata e sem custo.</p>
+          <CTAWhatsApp label="📱 FALAR COM O GESTOR HUMBERTO CORREIA" variant="green" />
         </AnimatedSection>
       </section>
 
@@ -330,6 +308,7 @@ export default function Home() {
             </div>
             <p>VALLE ASSOCIAÇÃO DE SOCORRO MÚTUO</p>
             <p>CNPJ: 52.243.261/0001-36</p>
+            <p className="mt-2 text-xs text-gray-500">Regularizada pela SUSEP</p>
           </div>
           <div>
             <h4 className="text-white font-bold text-base mb-3">Endereço</h4>
@@ -339,8 +318,9 @@ export default function Home() {
           </div>
           <div>
             <h4 className="text-white font-bold text-base mb-3">Contato</h4>
-            <p>WhatsApp: <a href="https://wa.me/5564931990013" className="text-[#00B4D8] hover:underline">(64) 9319-9013</a></p>
-            <p>Atendimento: das 6h às 23h, todos os dias</p>
+            <p>WhatsApp: <a href="https://wa.me/556499399013" className="text-[#00B4D8] hover:underline">(64) 9939-9013</a></p>
+            <p>Gestor: Humberto Correia</p>
+            <p>Atendimento: 24 horas, todos os dias</p>
             <p>Instagram: <a href="https://instagram.com/valleprotecaoitumbiara" target="_blank" rel="noopener noreferrer" className="text-[#00B4D8] hover:underline">@valleprotecaoitumbiara</a></p>
           </div>
         </div>
