@@ -149,7 +149,7 @@ export default function Home() {
             {[
               { titulo: "SEM CARÊNCIA", icon: "⚡", desc: "Assinou agora, tá protegido agora. Não tem aquela história de espera de 30 dias. A proteção começa na confirmação do seu pagamento." },
               { titulo: "SEM ANÁLISE DE PERFIL", icon: "✅", desc: "Motoboy? Aceito. Uber? Aceito. Tem 21 anos? Aceito. Mora em zona de risco? Aceito. A Valle protege quem o seguro rejeita." },
-              { titulo: "ATENDIMENTO HUMANO", icon: "💬", desc: "Você fala com o gestor Humberto Correia direto, no WhatsApp. Não é call center, não é robô. É gente de Itumbiara cuidando da sua proteção 24 horas." },
+              { titulo: "ATENDIMENTO HUMANO", icon: "💬", desc: "Você fala com o gestor Humberto Correa direto, no WhatsApp. Não é call center, não é robô. É gente de Itumbiara cuidando da sua proteção 24 horas." },
             ].map((card, i) => (
               <AnimatedSection key={card.titulo} delay={i * 0.15}>
                 <div className="bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-gray-100 h-full">
@@ -175,7 +175,7 @@ export default function Home() {
             {[
               { num: "01", titulo: "Faça a cotação", desc: "Manda mensagem no WhatsApp. Em minutos você recebe o valor da sua mensalidade — cotação imediata e sem custo.", icon: "📱" },
               { num: "02", titulo: "Envie seus dados", desc: "Documento do veículo, foto da CNH e dados básicos.", icon: "📄" },
-              { num: "03", titulo: "Vistoria online", desc: "Você mesmo grava um vídeo curto pelo celular. Sem deslocamento, sem perda de tempo.", icon: "🎥" },
+              { num: "03", titulo: "Vistoria online", desc: "Caso você não esteja na cidade, você mesmo consegue fazer sua vistoria realizando as fotos de forma simples e segura pelo celular.", icon: "🎥" },
               { num: "04", titulo: "Tá protegido!", desc: "Pagou a filiação, já vale. Sem carência, sem espera, sem burocracia.", icon: "🛡️" },
             ].map((step, i) => (
               <AnimatedSection key={step.num} delay={i * 0.1} direction="left">
@@ -258,8 +258,8 @@ export default function Home() {
               { q: "Quanto custa a mensalidade?", a: "A partir de R$ 83/mês para motos e a partir de R$ 100/mês para carros. Manda mensagem pra saber o valor exato do seu veículo — cotação imediata e sem custo." },
               { q: "Tem taxa de adesão?", a: "Sim, a filiação é cobrada uma única vez e equivale a aproximadamente 1% do valor de tabela do veículo." },
               { q: "Aceita motoboy, Uber, 99?", a: "Sim, aceitamos todos. A Valle não faz análise de perfil." },
-              { q: "Como faço pra acionar em caso de sinistro?", a: "Pelo atendimento direto no WhatsApp com o gestor Humberto Correia ou pelo app oficial Valle Proteção Veicular." },
-              { q: "Atende minha cidade?", a: "Atendemos Itumbiara e toda a região do Sul de Goiás e Triângulo Mineiro. Cobertura em território nacional ao dirigir." },
+              { q: "Como faço pra acionar em caso de sinistro?", a: "Pelo atendimento direto no WhatsApp com o gestor Humberto Correa ou pelo app oficial Valle Proteção Veicular." },
+              { q: "Atende minha cidade?", a: "Atendemos em todo território nacional." },
             ].map((faq, i) => (
               <AnimatedSection key={faq.q} delay={i * 0.05}>
                 <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-[#1A3A8F]/20 border border-gray-100 transition-all duration-300">
@@ -270,7 +270,7 @@ export default function Home() {
             ))}
           </div>
           <AnimatedSection className="mt-10 text-center">
-            <p className="text-gray-500 mb-4">Ainda tem dúvida? Fala direto com o gestor Humberto Correia.</p>
+            <p className="text-gray-500 mb-4">Ainda tem dúvida? Fala direto com o gestor Humberto Correa.</p>
             <CTAWhatsApp label="📱 TIRAR MINHA DÚVIDA NO WHATSAPP" variant="outline" />
           </AnimatedSection>
         </div>
@@ -289,7 +289,7 @@ export default function Home() {
             <span className="text-[#48CAE4]">Isso muda hoje.</span>
           </h2>
           <p className="text-blue-200 text-lg mb-3">
-            Fale com o gestor Humberto Correia agora. Em 2 minutos você sabe o valor exato — e já pode sair protegido.
+            Fale com o gestor Humberto Correa agora. Em 2 minutos você sabe o valor exato — e já pode sair protegido.
           </p>
           <p className="text-[#48CAE4] font-semibold mb-10">Cotação imediata e sem custo.</p>
           <CTAWhatsApp label="📱 FALAR COM O GESTOR HUMBERTO CORREIA" variant="green" />
@@ -319,7 +319,7 @@ export default function Home() {
           <div>
             <h4 className="text-white font-bold text-base mb-3">Contato</h4>
             <p>WhatsApp: <a href="https://wa.me/556499399013" className="text-[#00B4D8] hover:underline">(64) 9939-9013</a></p>
-            <p>Gestor: Humberto Correia</p>
+            <p>Gestor: Humberto Correa</p>
             <p>Atendimento: 24 horas, todos os dias</p>
             <p>Instagram: <a href="https://instagram.com/valleprotecaoitumbiara" target="_blank" rel="noopener noreferrer" className="text-[#00B4D8] hover:underline">@valleprotecaoitumbiara</a></p>
           </div>

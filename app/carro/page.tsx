@@ -86,8 +86,6 @@ export default function CarroPage() {
               { icon: "🛞", item: "Pneu furado — troca onde você estiver" },
               { icon: "🔑", item: "Chaveiro 24h" },
               { icon: "⛽", item: "Pane seca — combustível na estrada" },
-              { icon: "📡", item: "Rastreador incluso (sem custo extra)" },
-              { icon: "⛽", item: "Desconto em postos parceiros" },
             ].map((item) => (
               <motion.div key={item.item} variants={fadeUp}
                 className="flex items-center gap-4 bg-white border border-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md hover:border-[#1A3A8F]/20 transition-all duration-300">
@@ -177,7 +175,7 @@ export default function CarroPage() {
             {[
               { num: "01", titulo: "Faça a cotação", desc: "Manda mensagem no WhatsApp. Em minutos você recebe o valor da sua mensalidade.", icon: "📱" },
               { num: "02", titulo: "Envie seus dados", desc: "Documento do veículo, foto da CNH e dados básicos.", icon: "📄" },
-              { num: "03", titulo: "Vistoria online", desc: "Você mesmo grava um vídeo curto pelo celular. Sem deslocamento.", icon: "🎥" },
+              { num: "03", titulo: "Vistoria online", desc: "Caso você não esteja na cidade, você mesmo consegue fazer sua vistoria realizando as fotos de forma simples e segura pelo celular.", icon: "🎥" },
               { num: "04", titulo: "Tá protegido!", desc: "Pagou a filiação, já vale. Sem carência, sem espera.", icon: "🛡️" },
             ].map((step, i) => (
               <AnimatedSection key={step.num} delay={i * 0.1} direction="left">
@@ -207,7 +205,7 @@ export default function CarroPage() {
             <span className="text-[#48CAE4]">Isso acaba hoje.</span>
           </h2>
           <p className="text-blue-200 text-lg mb-10">
-            Fale com o gestor Humberto Correia agora. Em 2 minutos você sabe o valor exato — e já pode sair protegido.
+            Fale com o gestor Humberto Correa agora. Em 2 minutos você sabe o valor exato — e já pode sair protegido.
           </p>
           <CTAWhatsApp label="📱 FALAR COM O GESTOR HUMBERTO CORREIA" variant="green" />
         </AnimatedSection>
@@ -230,7 +228,7 @@ export default function CarroPage() {
           <div>
             <h4 className="text-white font-bold mb-3">Contato</h4>
             <p>WhatsApp: <a href="https://wa.me/556499399013" className="text-[#00B4D8] hover:underline">(64) 9939-9013</a></p>
-            <p>Gestor: Humberto Correia</p>
+            <p>Gestor: Humberto Correa</p>
             <p>Atendimento: 24 horas, todos os dias</p>
           </div>
         </div>
